@@ -8,7 +8,7 @@
 
 🎓 LikeLion (7th)
 
-📂 gvti (1th)
+📂 gvti (7th)
 
 </div>
 
