@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="140" viewBox="0 0 1200 140" role="img" aria-label="Thanks for visiting - CYJ">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A1B4D"/>
+      <stop offset="0.45" stop-color="#151A3A"/>
+      <stop offset="1" stop-color="#0B1020"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C9CFF"/>
+      <stop offset="1" stop-color="#C084FC"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.5" r="0.35">
+      <stop offset="0" stop-color="#8B5CF6" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#8B5CF6" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1.1" fill="#FFFFFF" fill-opacity="0.07"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="140" rx="20"/></clipPath>
+    <style>
+      .float1 { animation: float 9s ease-in-out infinite; }
+      .float2 { animation: float 11s ease-in-out infinite reverse; }
+      .spin   { transform-box: fill-box; transform-origin: center; animation: spin 40s linear infinite; }
+      .pulse  { animation: pulse 3.2s ease-in-out infinite; }
+      .p2 { animation-delay: .8s; } .p3 { animation-delay: 1.6s; }
+      .edge { stroke-dasharray: 4 6; animation: flow 6s linear infinite; }
+      @keyframes float { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-6px); } }
+      @keyframes spin  { to { transform: rotate(360deg); } }
+      @keyframes pulse { 0%,100% { opacity: .45; } 50% { opacity: 1; } }
+      @keyframes flow  { to { stroke-dashoffset: -100; } }
+      @media (prefers-reduced-motion: reduce) { * { animation: none !important; } }
+    </style>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="140" fill="url(#bg)"/>
+    <rect width="1200" height="140" fill="url(#dots)"/>
+    <rect width="1200" height="140" fill="url(#glow)"/>
+
+    <!-- left: geometric shapes + node motif -->
+    <g class="float1">
+      <circle cx="200" cy="70" r="46" fill="none" stroke="url(#accent)" stroke-width="1.5" stroke-opacity="0.55"/>
+    </g>
+    <g class="spin">
+      <polygon points="300,32 336,94 264,94" fill="none" stroke="#C084FC" stroke-opacity="0.55" stroke-width="1.5"/>
+    </g>
+    <g class="float2">
+      <rect x="86" y="44" width="40" height="40" rx="9" fill="#7C9CFF" fill-opacity="0.12" stroke="#7C9CFF" stroke-opacity="0.5" transform="rotate(18 106 64)"/>
+    </g>
+    <g stroke="url(#accent)" stroke-width="1.2" stroke-opacity="0.7" fill="none">
+      <path class="edge" d="M150 45 L200 70 L250 45"/>
+      <path class="edge" d="M150 95 L200 70 L250 95"/>
+    </g>
+    <g fill="#E9E5FF">
+      <circle class="pulse"    cx="150" cy="45" r="3.5"/>
+      <circle class="pulse p2" cx="150" cy="95" r="3.5"/>
+      <circle class="pulse p3" cx="250" cy="45" r="3.5"/>
+      <circle class="pulse"    cx="250" cy="95" r="3.5"/>
+      <circle cx="200" cy="70" r="5.5" fill="url(#accent)"/>
+    </g>
+
+    <!-- right: text -->
+    <g font-family="'Segoe UI', -apple-system, 'Helvetica Neue', Arial, sans-serif" text-anchor="end">
+      <text x="1110" y="64" fill="#FFFFFF" font-size="26" font-weight="700" letter-spacing="1">Thanks for visiting</text>
+      <text x="1110" y="96" fill="#9AA6D9" font-size="15" letter-spacing="3">DATA × AI → SERVICE</text>
+    </g>
+    <rect x="1046" y="108" width="64" height="3" rx="1.5" fill="url(#accent)"/>
+  </g>
+</svg>

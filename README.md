@@ -99,3 +99,7 @@ LLM 파인튜닝부터 API 서빙까지, 모델이 실제 서비스에서 동작
 - [JSP_BBS](https://github.com/yj2025/JSP_BBS): JSP 게시판
 
 </details>
+
+<br>
+
+<img src="./assets/footer.svg" width="100%" alt="Thanks for visiting - CYJ" />
