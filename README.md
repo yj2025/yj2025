@@ -1,6 +1,6 @@
 <div align="center">
 
-# Hi, I'm CYJ 👋
+<img src="./assets/header.svg" width="100%" alt="CYJ - AI · LLM · Backend Developer" />
 
 **데이터와 AI를 연결해 서비스를 구현하는 백엔드 개발자**
 
