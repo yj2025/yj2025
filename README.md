@@ -22,14 +22,15 @@ Qwen3-8B QLoRA 파인튜닝으로 검토된 정답셋 기준 정확도를 67.4%�
 GPU 없이 한글 문서, 사진, PDF에서 텍스트를 추출하는 경량 OCR 환경입니다.
 모델 비교 실험으로 PP-OCRv5 mobile을 선정했고, 이미지당 2-4초에 인쇄체 정확도 95-100%입니다.
 
-**[News Digest](https://github.com/yj2025/yj2025_NewsDigest)** &nbsp;<sub>FastAPI · Transformers · BeautifulSoup</sub>
+**[ADsP Study Room](https://github.com/yj2025/ADsP_study)** &nbsp;<sub>Node.js · SQLite · Docker · Caddy</sub>
 
-뉴스 URL을 넣으면 본문을 크롤링해 KoBART로 요약하는 웹 서비스입니다.
+ADsP 시험 대비 학습 웹 앱입니다. 개념 카드, 단원별 문제 풀이, 오답 노트, 시간제한 모의고사를 제공합니다.
+이메일 회원가입과 계정별 학습 기록을 지원하며, scrypt 비밀번호 해시, HttpOnly 세션 쿠키, IP별 인증 시도 제한을 적용했습니다.
 
 ## Stack
 
 Python · PyTorch · Hugging Face Transformers · QLoRA · Prompt Engineering<br>
-FastAPI · Django · PostgreSQL (Supabase) · MySQL · Docker · Kubernetes (KubeSphere) · AWS
+FastAPI · Django · Node.js · PostgreSQL (Supabase) · MySQL · Docker · Kubernetes (KubeSphere) · AWS
 
 ## Background
 
@@ -42,6 +43,7 @@ FastAPI · Django · PostgreSQL (Supabase) · MySQL · Docker · Kubernetes (Kub
 <br>
 
 - [godot-yeoul-farm](https://github.com/yj2025/godot-yeoul-farm): Godot 4 농장 경영 시뮬레이션
+- [News Digest](https://github.com/yj2025/yj2025_NewsDigest): FastAPI + KoBART 뉴스 요약 서비스
 - [OneShot](https://github.com/yj2025/OneShot): 웹 기반 FPS 게임
 - [django-jyj-ecommerce](https://github.com/yj2025/django-jyj-ecommerce) · [django-jyj-boards](https://github.com/yj2025/django-jyj-boards) · [django_vote_service](https://github.com/yj2025/django_vote_service): Django 실습
 - [JSP_BBS](https://github.com/yj2025/JSP_BBS): JSP 게시판
